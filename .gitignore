@@ -13,6 +13,7 @@ ENV/
 
 # Output
 *_export.txt
+*_transcript_export.txt
 
 # IDE
 .idea/

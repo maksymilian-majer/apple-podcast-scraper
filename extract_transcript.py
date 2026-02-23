@@ -153,7 +153,8 @@ def main():
 
     clean_text = parse_ttml(selected_file)
 
-    output_filename = "transcript_export.txt"
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    output_filename = f"{timestamp}_transcript_export.txt"
     with open(output_filename, "w", encoding="utf-8") as f:
         f.write(clean_text)
 
